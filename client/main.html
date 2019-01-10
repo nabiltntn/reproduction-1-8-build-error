@@ -1,0 +1,17 @@
+<head>
+  <title>reproduction</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <button>Click to call the method</button>
+  <ul>
+    {{#each messages}}
+      <li>{{content}}</li>
+    {{/each}}
+  </ul>
+</template>
